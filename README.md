@@ -1,2 +1,2 @@
-# demo-react-minimal
+# Immutable Update  Patterns
 React Example Todo List

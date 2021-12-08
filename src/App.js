@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import 'App.css';
 import Header from 'components/Header';
+import Counter from 'components/Counter';
 
 export default function App() {
   const [list, setList] = useState([]);
@@ -8,11 +9,15 @@ export default function App() {
 
   const addItem = function() {
     // We could do it this way
-    // const newList = [...list];
+    // const newList = list.slice(); // COPY
     // newList.push(text);
     // setList(newList);
 
-    // Add Item to the end
+    // This is better
+    // const newList = [...list];
+    // setList(newList);
+
+    // This is the best way
     setList([...list, text]);
 
     // Add Item to the beginning
@@ -44,6 +49,7 @@ export default function App() {
     <div className="App">
 
       <Header text="My ToDo List" />
+      <Counter start={0} />
       <input value={text} onChange={textChanged} />
       <br />
       <button onClick={addItem}>Add Item</button>
