@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div>
-      Hello World
+      Hello React World
     </div>
   );
 }
