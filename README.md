@@ -1,5 +1,6 @@
 # Immutable Update  Patterns
 
+[ ] Review:  React App Anatomy
 [ ] Review: Components, Props, and State
 [ ] Stale State
 [ ] The Problem with Mutating State
