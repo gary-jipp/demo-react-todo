@@ -20,6 +20,7 @@ export default function App() {
   return (
     <div className="App">
       <Header text="My ToDo List" />
+      
       <input value={text} onChange={textChanged} />
       <br />
       <button onClick={addItem}>Add Item</button>
