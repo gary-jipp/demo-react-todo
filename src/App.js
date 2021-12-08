@@ -7,6 +7,7 @@ export default function App() {
   const [text, setText] = useState("");
 
   const addItem = function() {
+    // We could do it this way
     // const newList = [...list];
     // newList.push(text);
     // setList(newList);
@@ -15,17 +16,19 @@ export default function App() {
     setList([...list, text]);
 
     // Add Item to the beginning
-    setList([text, ...list]);
+    // setList([text, ...list]);
   };
 
   // Not the best Delete function
   const deleteItem = function(event) {
     console.log(event.target);
+
+    // Remove using pop
     // const newList = [...list];
     // newList.pop();
     // setList(newList);
 
-    // Remove tjhe last item - same as a pop
+    // Remove the last item - same as a pop
     setList([...list].slice(0, -1));
   };
 
