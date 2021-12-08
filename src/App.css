@@ -7,15 +7,6 @@ h1 {
   font-family: cursive;
 }
 
-h4 {
-  padding: 0px;
-  margin: 0.2em;
-}
-
-h4:empty:before {
-  content: "\200b"; /* unicode zero width space character */
-}
-
 ul {
   list-style: none;
   padding-left: 0;
