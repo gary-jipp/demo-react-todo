@@ -9,16 +9,23 @@ export default function App() {
     setList([...list, text]);
   };
 
-  const delItem = function() {
-    setList([...list, text]);
+  // Not the best Delete function
+  const deleteItem = function() {
+    // const newList = [...list];
+    // newList.pop();
+    // setList(newList);
+
+    // Remove tjhe last item - same as a pop
+    setList([...list].slice(0, -1));
+
   };
 
   const textChanged = function(event) {
     setText(event.target.value);
   };
 
-  const itemList = list.map(item => {
-    return <li>{item}</li>;
+  const itemList = list.map((item, i) => {
+    return <li key={i} onClick={deleteItem} >{item}</li>;
   });
 
   return (
