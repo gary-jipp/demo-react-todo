@@ -3,12 +3,14 @@ import 'App.css';
 
 export default function App() {
   const [list, setList] = useState([]);
-  const [text, setText] = useState();
+  const [text, setText] = useState("");
 
   const addItem = function() {
-    list.push(text);
-    setList(list);
-    console.log(list);
+    setList([...list, text]);
+  };
+
+  const delItem = function() {
+    setList([...list, text]);
   };
 
   const textChanged = function(event) {
