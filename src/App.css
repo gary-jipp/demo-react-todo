@@ -1,5 +1,10 @@
 .App {
   margin: 1em;
+  text-align: center;
+}
+
+h1 {
+  font-family: cursive;
 }
 
 h4 {
@@ -14,13 +19,15 @@ h4:empty:before {
 ul {
   list-style: none;
   padding-left: 0;
+  margin: auto;
+  width: 16em;
 }
 
 li {
   padding: 5px;
   margin: 2px;
-  width: 21em;
   background-color: #eee;
+  text-align: left;
 }
 
 li a {
@@ -38,4 +45,9 @@ li:hover a {
 
 span {
   color: red;
+}
+
+button { 
+  padding: 4px;
+  margin: 5px;
 }
