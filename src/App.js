@@ -6,7 +6,15 @@ export default function App() {
   const [text, setText] = useState("");
 
   const addItem = function() {
+    // const newList = [...list];
+    // newList.push(text);
+    // setList(newList);
+
+    // Add Item to the end
     setList([...list, text]);
+
+    // Add Item to the beginning
+    setList([text, ...list]);
   };
 
   // Not the best Delete function
@@ -17,7 +25,6 @@ export default function App() {
 
     // Remove tjhe last item - same as a pop
     setList([...list].slice(0, -1));
-
   };
 
   const textChanged = function(event) {
