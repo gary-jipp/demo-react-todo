@@ -19,13 +19,15 @@ h4:empty:before {
 ul {
   list-style: none;
   padding-left: 0;
+  margin: auto;
+  width: 16em;
 }
 
 li {
   padding: 5px;
   margin: 2px;
-  width: 16em;
   background-color: #eee;
+  text-align: left;
 }
 
 li a {
