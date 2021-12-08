@@ -1,2 +1,2 @@
 # demo-react-minimal
-Minimal React App
+React Example Todo List

@@ -1,5 +1,10 @@
 .App {
   margin: 1em;
+  text-align: center;
+}
+
+h1 {
+  font-family: cursive;
 }
 
 h4 {
@@ -19,7 +24,7 @@ ul {
 li {
   padding: 5px;
   margin: 2px;
-  width: 21em;
+  width: 16em;
   background-color: #eee;
 }
 
@@ -38,4 +43,9 @@ li:hover a {
 
 span {
   color: red;
+}
+
+button { 
+  padding: 4px;
+  margin: 5px;
 }
