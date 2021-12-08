@@ -19,7 +19,8 @@ export default function App() {
   };
 
   // Not the best Delete function
-  const deleteItem = function() {
+  const deleteItem = function(event) {
+    console.log(event.target);
     // const newList = [...list];
     // newList.pop();
     // setList(newList);
